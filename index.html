@@ -1,12 +1,667 @@
+
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-<title>Page Title</title>
+	<base href="https://www.feam.scu.edu.tw/">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="zh-tw" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="首耀科技股份有限公司 Frank Chen" />
+	<meta name="csrf-token" content="67CMBgckl5xgsyl1cxkanHdCgxhCj4KNP4RHmnGS">
+	<title>東吳大學【財務工程與精算數學系】</title>
+	<meta name="Copyright" content="東吳大學【財務工程與精算數學系】" />
+	<meta property="og:title" content="東吳大學【財務工程與精算數學系】"/>
+	<meta property="og:site_name" content="東吳大學【財務工程與精算數學系】"/>
+	<meta property="og:description" content=""/>
+	<meta property="og:image" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Web Fonts -->
+	<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
+	<!-- CSS Global Compulsory -->
+	<link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+	<!-- CSS Header and Footer -->
+	<link rel="stylesheet" href="/assets/css/headers/header-default.css">
+	<link rel="stylesheet" href="/assets/css/footers/footer-v1.css">
+
+	<!-- CSS Implementing Plugins -->
+	<link rel="stylesheet" href="/assets/plugins/animate.css">
+	<link rel="stylesheet" href="/assets/plugins/line-icons/line-icons.css">
+	<link rel="stylesheet" href="/assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="/assets/plugins/sky-forms-pro/skyforms/css/sky-forms.css">
+	<link rel="stylesheet" href="/assets/plugins/sky-forms-pro/skyforms/custom/custom-sky-forms.css">
+	<!--[if lt IE 9]><link rel="stylesheet" href="/assets/plugins/sky-forms-pro/skyforms/css/sky-forms-ie8.css"><![endif]-->
+
+	<!-- CSS Page Style -->
+	<link rel="stylesheet" href="/assets/css/pages/page_about.css">
+	<link rel="stylesheet" href="/assets/css/pages/profile.css">
+
+	<!-- CSS Theme -->
+	<link rel="stylesheet" href="/assets/css/theme-colors/default.css" id="style_color">
+	<link rel="stylesheet" href="/assets/css/theme-skins/dark.css">
+
+	<!-- CSS Customization -->
+	<link rel="stylesheet" href="/assets/css/custom.css">
+	<style>
+    	#mwt_mwt_slider_scroll
+        {
+            top: 0;
+            left:-360px;
+            width:360px;
+            position:fixed;
+            z-index:9999;
+        }
+        
+        #mwt_slider_content{
+            background:#3c5a98;
+            text-align:center;
+            padding-top:20px;
+        }
+        
+        #mwt_fb_tab {
+            position:absolute;
+            top:20px;
+            right:-30px;
+            width:24px;
+            background:#3c5a98;
+            color:#ffffff;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align:center;
+            padding:9px 0;
+            
+            -moz-border-radius-topright:10px;
+            -moz-border-radius-bottomright:10px;
+            -webkit-border-top-right-radius:10px;
+            -webkit-border-bottom-right-radius:10px;
+        }
+        #mwt_fb_tab span {
+            display:block;
+            height:12px;
+            padding:1px 0;
+            line-height:12px;
+            text-transform:uppercase;
+            font-size:12px;
+        }
+	</style>
+   <style>
+   
+	#loading {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  line-height: 100%;
+	  background: black;
+	  opacity: 0.6;
+	  cursor: wait;
+	  display: none;
+	}
+	#loading .loading {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  margin: -55px 0 0 -55px;
+	  border: 16px solid #f3f3f3;
+	  border-radius: 50%;
+	  border-top: 16px solid #3498db;
+	  width: 110px;
+	  height: 110px;
+	  -webkit-animation: spin 2s linear infinite; /* Safari */
+	  animation: spin 2s linear infinite;
+	}
+	#loading .loading.stop {
+	  animation: unset;
+	}
+   
+   </style>	
 </head>
-<body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<body style="z-index:99999;">
 
+    <!-- 遮罩 -->
+    <div id="loading" style="z-index:66666;">
+        <div class="loading"></div>
+    </div>  
+
+    <div id="mwt_mwt_slider_scroll">
+         <div id="mwt_fb_tab">
+            <span>回</span>
+            <span>上</span>
+            <span>一</span>
+            <span>頁</span>
+        </div>
+    </div>
+	<div class="wrapper">
+		<!--=== Header ===-->
+		<div class="header">
+			<div class="container">
+				<!-- Logo -->
+				<a class="logo hidden-xs visible-sm visible-md visible-lg" target="_blank" href="https://www.feam.scu.edu.tw/">
+					<img src="/images/logo_small.png" alt="Logo"><img src="/images/logo_with_title.png">
+				</a>
+				<a class="logo visible-xs hidden-sm hidden-md hidden-lg" target="_blank" href="https://www.feam.scu.edu.tw/">
+					<img src="/images/logo_small_and_more.png" alt="Logo"><img src="/images/logo_with_title_small.png">
+				</a>
+				<!-- End Logo -->
+
+				<!-- Toggle get grouped for better mobile display -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="fa fa-bars"></span>
+				</button>
+				<!-- End Toggle -->
+			</div><!--/end container-->
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
+				<div class="container">
+					<ul class="nav navbar-nav">
+						
+						<!-- 前台選單 *START* -->
+																					<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">學系公告</a>
+									<ul class="dropdown-menu">
+																																																						<li><a href="/news" target="_self">最新消息</a></li>
+																																												<li><a href="/activity" target="_self">活動訊息</a></li>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		<li><a href="/contact" target="_self">聯絡我們</a></li>
+																																																																																																																																																					<li><a href="/" target="_self">返回首頁</a></li>
+																														</ul>
+								</li>	
+																																																																																<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">學系介紹</a>
+									<ul class="dropdown-menu">
+																																																																																																																																																															<li><a href="/department/2" target="_self">學系沿革</a></li>
+																																																																																																																																<li><a href="/department/3" target="_self">學系發展目標</a></li>
+																																																																																																																																																																																																																																									<li><a href="/department/4" target="_self">發展方向與特色</a></li>
+																																																																																																																																																																																															<li><a href="/department/5" target="_self">教育目標</a></li>
+																																																																																						<li><a href="/department/6" target="_self">核心能力</a></li>
+																																																																	<li><a href="/department/13" target="_self">歷任系主任</a></li>
+																																																																	<li><a href="/department/7" target="_self">學系系徽</a></li>
+																																												<li><a href="/department/8" target="_self">學系系旗</a></li>
+																																												<li><a href="/department/11" target="_self">交通地理資訊</a></li>
+																																																			</ul>
+								</li>	
+																																																																																<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">課程資訊</a>
+									<ul class="dropdown-menu">
+																																																																																																																																																																																																									<li><a href="/course/21/" target="_self">大學部課程</a></li>
+																																																																																																																																<li><a href="/course/22/" target="_self">碩士班課程</a></li>
+																																																																																																																																																																																																																																																																																																																													<li><a href="/course/23/" target="_self">碩士在職專班課程</a></li>
+																																																																																																																																																																																																																																																																																										</ul>
+								</li>	
+																																																																																																																																																	<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">師資介紹</a>
+									<ul class="dropdown-menu">
+																																																																																																																					<li><a href="/faculty_personal/25" target="_self">現任系主任</a></li>
+																																																																																																																																																																																																																																																																																																								<li><a href="/faculty/3" target="_self">專任教師</a></li>
+																																												<li><a href="/faculty/4" target="_self">兼任教師</a></li>
+																																												<li><a href="/faculty/5" target="_self">專兼任助教</a></li>
+																																																																																																																																																					<li><a href="/faculty/6" target="_self">行政職員</a></li>
+																																																																																																																																																																																																																																																																																																																																				</ul>
+								</li>	
+																																																																																																																							<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">招生資訊</a>
+									<ul class="dropdown-menu">
+																																																																																																																																																																																				<li><a href="/admissions/20" target="_self">大學部招生</a></li>
+																																																																																																																																<li><a href="/admissions/21/" target="_self">碩士班招生</a></li>
+																																																																																																																																																																																																																																									<li><a href="/admissions/22/" target="_self">碩士在職專班招生</a></li>
+																																																																																																																																																																																																																																																																																																																																																																																																			</ul>
+								</li>	
+																																																						<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">學生園地</a>
+									<ul class="dropdown-menu">
+																																																																																																																																																																																																																														<li><a href="/student_garden/7/" target="_self">獎助學金</a></li>
+																																																																																																																																<li><a href="/student_garden/19/" target="_self">新生學習手冊</a></li>
+																																												<li><a href="/student_garden/20/" target="_self">證照考試科目與系所課程一覽表</a></li>
+																																												<li><a href="/student_garden/6/" target="_self">系學生會介紹</a></li>
+																																																																																																																																																																										<li><a href="/student_garden/5/" target="_self">學術倫理</a></li>
+																																												<li><a href="/student_garden/17/" target="_self">各班導師</a></li>
+																																																																																																																																																																																																																																																																																																																																																									</ul>
+								</li>	
+																																																																			<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">系友專區</a>
+									<ul class="dropdown-menu">
+																																																																																																<li><a href="/friend/2" target="_self">傑出系友</a></li>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										<li><a href="/friend/5/" target="_self">系友專訪</a></li>
+																																																																																																											<li><a href="http://sys.feam.scu.edu.tw/Epaper/" target="_blank">商用數學電子報</a></li>
+																																																																																																																																																																																																																											</ul>
+								</li>	
+																																																																							<!-- 前台選單 *END* --> 						
+						
+						<!-- 語言 *START* -->
+						<li class="dropdown">
+							<a href="/" class="dropdown-toggle" data-toggle="dropdown">
+								語言|Language
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">繁體中文 Traditional Chinese</a></li>
+								<li><a href="#">英文 English</a></li>
+							</ul>
+						</li>
+						<!-- 語言 *END* -->
+						
+						<!-- Search Block -->
+						<li>
+							<i class="search fa fa-search search-btn"></i>
+							<div class="search-open">
+								<div class="input-group animated fadeInDown">
+									<input type="text" class="form-control" placeholder="Search">
+									<span class="input-group-btn">
+										<button class="btn-u" type="button">Go</button>
+									</span>
+								</div>
+							</div>
+						</li>
+						<!-- End Search Block -->
+					</ul>
+				</div><!--/end container-->
+			</div><!--/navbar-collapse-->
+		</div>
+		<!--=== End Header ===-->
+
+		<!--=== Breadcrumbs ===-->
+		<div class="breadcrumbs">
+			<div class="container">
+                	
+			
+				
+<h1 class="pull-left">李宜熹 助理教授</h1>
+<ul class="pull-right breadcrumb">
+	<li><a href="/">首頁</a> &gt; <a href="/faculty/">師資介紹</a> &gt; <a href="/faculty/72">專任教師</a></li>
+</ul>
+
+			</div><!--/container-->
+		</div><!--/breadcrumbs-->
+		<!--=== End Breadcrumbs ===-->
+
+		<!--=== Content Part ===-->
+		<div class="container content profile">
+			
+		<!--=== Blog Posts ===-->
+		<div class="bg-color-light">
+			<div class="container content-sm">
+				<div class="row">
+					<!-- Blog Sidebar -->
+					<div class="col-md-3">
+						<div class="headline-v2"><h2>師資介紹</h2></div>
+						<!-- Trending -->
+							<ul class="list-unstyled blog-trending margin-bottom-50">
+																																																																											            							<li>
+            								            									<h3><a href="/faculty_personal/25" target="_self">現任系主任</a></h3>
+            									<ul>
+            									            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							                    							</ul>
+            								            							</li>
+																																																																																																																																																																																																											            							<li>
+            								            									<h3><a href="/faculty/3" target="_self">專任教師</a></h3>
+            									<ul>
+            									            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							                    							</ul>
+            								            							</li>
+																							            							<li>
+            								            									<h3><a href="/faculty/4" target="_self">兼任教師</a></h3>
+            									<ul>
+            									            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							                    							</ul>
+            								            							</li>
+																							            							<li>
+            								            									<h3><a href="/faculty/5" target="_self">專兼任助教</a></h3>
+            									<ul>
+            									            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							                    							</ul>
+            								            							</li>
+																																																																																																		            							<li>
+            								            									<h3><a href="/faculty/6" target="_self">行政職員</a></h3>
+            									<ul>
+            									            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							            										                    							                    							</ul>
+            								            							</li>
+																																																																																																																																																																																																																																								</ul>
+							<!-- End Trending -->
+					</div>
+					<!-- End Blog Sidebar -->
+
+					<!-- Blog All Posts -->
+					<div class="col-md-9" style="color:#000;">
+						<div class="row">
+							<h2>李宜熹 助理教授</h2><BR>
+							<img src="/uploads/images/hIeJhUgCJXSDWu0rK04ylYlHm02NNPtS8AVGNEGt.jpeg"><BR>
+							國立中山大學財務管理博士
+國立中山大學財務管理碩士
+東海大學企業管理學士<BR>
+							學術專長 : 金融風險管理、財務工程、金融科技、金融資料探勘<BR>
+							校內分機 : 3621<BR>
+							辦公室 : 2334<BR>
+							電子郵件 : eclee@scu.edu.tw<BR>
+							研究室 : 2334<BR>
+						</div>
+						<div class="row">
+							<h2>課表</h2>
+							<div>
+																<button class="btn btn-info btn_class" data-class_teacher="李宜熹 " data-class_year="107" data-class_master="1" >107 學年上學期課表 </button>
+																<button class="btn btn-info btn_class" data-class_teacher="李宜熹 " data-class_year="107" data-class_master="2" >107 學年下學期課表 </button>
+															</div>
+						</div>
+						<div class="row">
+							<h2>專書/論文集論文</h2><BR>
+							<BR>
+						</div>
+						<div class="row">
+							<h2>期刊論文</h2><BR>
+							<p>期刊論文</p>
+<ol>
+<li>陳勤明、洪志興、李宜熹 (2017)，「我國不動產逆向抵押貸款評價」，第二十六卷，第一期， 住宅學報 ，1-16。(TSSCI)</li>
+<li>Hung C.H., D.Y. Yang, Y.H. Lee (2016), Crouching Tigers Hidden Dragons: on the Myth of the Two Birth Signs, Asian Population Studies , 12(2), 220-227. (SSCI)</li>
+<li>郭照榮、李宜熹、陳勤明 (2013)，「Basel Ⅲ對金融穩定及貨幣政策之影響」，中央銀行季刊 第三十五卷，第二期，11-59。</li>
+<li>Lee, Y. H. and Y. F. Chiu (2013), Nonlinearly Smooth Transition in Russell Index Futures Basis, Journal of Money, Investment, and Banking, Issue 27, 197-206.</li>
+<li>Lee, Y. H., S. D. Shyu, M. H. Hsieh, and M. L. Lee (2010), Relationships between TOPIX Real Estate Index and Nikkei 225 Index, International Research Journal of Finance and Economics Vol. 42, No. 13, 150-162. (EconLit)</li>
+<li>徐守德、謝明華、李宜熹 (2005)，「平均選擇權數值訂價方法之比較」，台灣金融財務季刊，第6輯，第3期，81-105。</li>
+</ol>
+<p>會議論文</p>
+<ol>
+<li>Hsieh, M H., Y. H. Lee, S. D. Shyu, Y. F. Chiu (2017), Estimating Multifactor Portfolio Credit Risk - A Variance Reduction Approach, 2017 China International Risk Forum.【本篇論文榮獲最佳論文獎 (University of Kentucky Research Excellence Award)】</li>
+<li>李宜熹 (2016)，「市場風險管理系統建置與開發」，第九屆 R 語言會議 (北京)，北京，中國。【中國人民大學統計學院、中國人民大學應用統計科學研究中心、北京大學商務智能研究中心、北京大學統計科學中心、倫敦政治經濟學院統計學系、統計之都、百分點集團 共同主辦；泛華統計協會、中國統計學會 共同協辦】</li>
+<li>李宜熹 (2015)，「ESG 經濟情境產生器之系統開發」，第八屆 R 語言會議 (北京)，北京，中國。【統計之都、北京大學光華管理學院 共同主辦】</li>
+<li>Wang, Y. S. and Y. H. Lee (2014), Corporate socially responsible and financial performance in the tourism-related industries, 2014 Hong Kong International Conference on Social Science, Hong Kong, China (2014/10/03-04). 【本篇論文榮獲最佳論文獎 (Best Paper Award)】</li>
+<li>Chiu, Y. F., M. H., Hsieh, and Y. H. Lee (2014), An Efficient Monte Carlo Method for Estimation of Operational VaR and ES under Loss Distribution Approach, 2014 Taiwan Risk and Insurance Association Conference, Taichung, Taiwan.【逢甲大學風險管理與保險學系、台灣風險與保險學會】</li>
+<li>陳勤明、李宜熹 (2013)，利變年金保單之財務評估與訂價，2013財務工程與精算科學研討會，台北，台灣。【東吳大學財務工程與精算數學系】</li>
+<li>Lee, Y. H., M. H. Hsieh, S. D. Shyu (2013), An Efficient Monte Carlo Algorithm for Estimating Multifactor Portfolio Credit VaR, 2013 Conference on Financial Engineering and Actuarial Science, Taipei, Taiwan.【東吳大學財務工程與保險精算數學系】</li>
+<li>Hsieh, M. H., S. D. Shyu, Y. H. Lee, and Y. F. Chiu (2012), An Efficient Monte Carlo Algorithm for Estimating Multifactor Portfolio Credit VaR, 2012 NCCU International Academic Seminar, Taipei, Taiwan. 【國立政治大學風險管理與保險學系、國立政治大學風險與保險研究中心】</li>
+<li>Jeng, Y., S. W. Tzang, Y. H. Lee, and Y. H. Hsu (2011), Enhanced Index Fund Performance Analysis by Multi-factor Alpha Model: Evidence from Taiwan, 2011 Taiwan Finance Association Conference, Kaohsiung, Taiwan.【臺灣財務金融學會&amp;高雄第一科技大學財金學院】</li>
+<li>Wang, C. W., S. W. Tzang, C. H. Hun, and Y. H. Lee (2007), APT-GARCH Option Pricing Model, The 15th Conference on the Theories and Practices of Securities and Financial Markets, Kaohsiung, Taiwan.【中山大學財務管理系】</li>
+<li>郭照榮、賴光二、陳勤明、李宜熹 (2005)，「銀行放款隱含違約機率與回復率之聯合估計」，總體經濟計量模型研討會，台北，台灣。【中央研究院經濟研究所&amp;北美經濟學會】</li>
+<li>郭照榮、陳勤明、李宜熹 (2005)，「銀行企業金融放款之信用風險實證研究」，金融市場與政策研討會，台北，台灣。【臺灣經濟學會&amp;台灣大學經濟系】</li>
+<li>李宜熹 (2004)，「臺灣公營銀行民營化案例分析」，首都經貿大學，北京。【第三屆財務理論與實踐研討會】</li>
+<li>李宜熹、徐守德、謝明華 (2003)，「資料採礦在財務危機預警之應用」，國科會2003年財務新進學者研討會，台中，台灣。【國科會管理學門一&amp;中興大學財務金融系】</li>
+<li>李灝銘、李宜熹 (2003)，「企業綠色&mdash;同步設計管理之理念架構探討」，2003年環境工程年會研討會論文集，台中，台灣。【台灣環境工程學會&amp;東海大學環境工程系】</li>
+</ol>
+						</div>
+						<div class="row">
+							<h2>其它</h2><BR>
+							<p>榮譽 :</p>
+<ol>
+<li>國立高雄科技大學 106-1 學期教學成效優異獎 (2018) <br />University of Kentucky Research Excellence Award, 2017 China International Risk Forum (2017)</li>
+<li>Best Paper Award, 2014 Hong Kong International Conference on Social Science (2014)</li>
+<li>中華開發金控 (中華開發工業銀行) 碩士論文佳作獎 (2003 <br />行政院國家科學委員會大專暑期學生創作獎 (八十七年度大專獎字第O八二號) (1999)</li>
+<li>中華民國榮譽斐陶斐學會會員 (1998)<br />東海大學學行優良畢業生 (1998)</li>
+</ol>
+<p>學位論文 :</p>
+<ol>
+<li>Lee, Yi-Hsi (2010), Monte Carlo Methods for Multifactor Portfolio Credit Risk, Ph.D. Thesis, Department of Finance, National Sun Yat-sen University.</li>
+<li>Lee, Yi-Hsi (2003), A Comparison of Numerical Pricing Methods for Average Options, Master Thesis, Department of Finance, National Sun Yat-sen University.</li>
+</ol>
+<p>研究計畫</p>
+<ol>
+<li>彭金隆、許永明、謝明華、李宜熹、張志宏 (2018)，「學生團體保險暨校園場所公共意外責任保險線上資訊平臺 (第三期)」。(委託單位：教育部國教署委託研究計畫；專案職務：協同主持人)</li>
+<li>彭金隆、許永明、謝明華、李宜熹、張志宏 (2017)，「學生團體保險暨校園場所公共意外責任保險線上資訊平臺 (第二期)」。(委託單位：教育部國教署委託研究計畫；專案職務：助理教授級研究員)</li>
+<li>謝明華、邱于芬、李宜熹 (2015)，「金融消費爭議發生成因大數據分析」。(委託單位：財團法人金融消費評議中心；專案職務：協同主持人)</li>
+<li>郭照榮等 (2013)，「Basel III 對金融穩定及貨幣政策之影響」。(中央銀行委託研究計畫編號：101CBC-金-1；專案職務：助理教授級研究員)</li>
+<li>郭照榮等 (2004)，「臺灣土地銀行民營化委託計畫成果報告」。(財政部度委託研究計畫編號：PG9308-0038；專案職務：講師級研究員)</li>
+<li>李宜熹 (1998)，「綠色&mdash;同步設計研發管理體系架構之研究」。(行政院國家科學委員會研究計畫編號：NSC87-2815-C-029-016-H；專案職務：主持人)</li>
+</ol>
+						</div>
+						<div class="row">
+							<button id="btnBack" name="btnBack" class="btn btn-info">返回列表</button>
+						</div>
+					</div>
+					<!-- End Blog All Posts -->
+					<div id="class-modal" class="modal fade" role="dialog">
+                          <div class="modal-dialog modal-lg">
+                        
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 id="modal-title">師資課表資料</h4>
+                              </div>
+                              <div id="modal-body" style="background-color: #f1f1f1;color:#000000;padding-left:20px;">
+                                課表內容
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+                            </div>
+                        
+                          </div>
+                     </div>
+                     <form name="mytmp" id="mytmp">
+                    		<input type="hidden" name="_token" value="67CMBgckl5xgsyl1cxkanHdCgxhCj4KNP4RHmnGS">  
+                    		<input type="hidden" name="teachname" id="teachname" value="not"/>   
+                    		<input type="hidden" name="syear" id="syear" value="1"/>
+                    		<input type="hidden" name="smester" id="smester" value="not"/> 
+                    	</form>
+				</div>
+			</div><!--/end container-->
+		</div>
+		<!--=== End Blog Posts ===-->
+
+		</div>
+		<!--=== End Content Part ===-->
+
+		<!--=== Footer Version 1 ===-->
+		<div class="footer-v1">
+			<div class="footer">
+				<div class="container">
+					<div class="row">
+						<!-- About -->
+						<div class="col-md-3 md-margin-bottom-40">
+							<a href="/"><img id="logo-footer" class="footer-logo" style="width:85px;" src="/images/FEAM-Logo-200_burned.png" alt="東吳大學【財務工程與精算數學系】"></a>
+							<p><p><a href="https://www.facebook.com/FEAM.SCU/" target="_blank"><img src="../uploads/tinyimages/811Y5eq0CjPBXnh2VYUnHL5OGb2Skos7OiBNk97D.png" alt="" width="117" height="144" /></a>&nbsp;<a href="https://www.youtube.com/channel/UCUvLzuTks_ET19dBsbaiVMg" target="_blank"><img src="../uploads/tinyimages/vZ73Kc5U7kX4wTVFsTSDGRTQrq21bS8yP9gUh1G2.png" alt="" width="117" height="144" /></a><br /><img class="img-responsive" src="../uploads/tinyimages/fF4VkeK2avRASBOqxrxHIYDahhDdA7KTrtYGN98S.png" alt="" /></p></p>
+						</div><!--/col-md-3-->
+						<!-- End About -->
+
+						<!-- Latest -->
+						<div class="col-md-3 md-margin-bottom-40">
+							<div class="posts">
+								<div class="headline"><h2>最新消息</h2></div>
+								<ul class="list-unstyled latest-list">
+																		<li>
+										<a href="/newsdetail/80">【一般公告】東吳大學財務工程與精算數學系徵聘教師</a>
+										<small>2019-03-21</small>
+									</li>
+																		<li>
+										<a href="/newsdetail/78">【一般公告】108學年度甄選入學個人申請家長座談會暨備審資料說明會</a>
+										<small>2019-03-13</small>
+									</li>
+																		<li>
+										<a href="/newsdetail/79">【校園徵才】2019新光金控校園徵才說明會</a>
+										<small>2019-03-18</small>
+									</li>
+																		<li>
+										<a href="/newsdetail/58">【榮譽榜】恭賀本系64級魏江霖傑出系友接任台銀綜合證券董事長！</a>
+										<small>2018-09-13</small>
+									</li>
+																	</ul>
+							</div>
+						</div><!--/col-md-3-->
+						<!-- End Latest -->
+
+						<!-- Link List -->
+						<div class="col-md-3 md-margin-bottom-40">
+							<div class="headline"><h2>快速連結</h2></div>
+							<ul class="list-unstyled link-list">
+																	<li><a href="http://www.scu.edu.tw/" target="_blank">東吳大學</a><i class="fa fa-angle-right"></i></li>
+																	<li><a href="http://sys.feam.scu.edu.tw/Epaper/" target="_blank">商用數學電子報</a><i class="fa fa-angle-right"></i></li>
+																	<li><a href="http://www.ecampus.scu.edu.tw/" target="_blank">電子化校園系統</a><i class="fa fa-angle-right"></i></li>
+																	<li><a href="http://files.sys.scu.edu.tw/FilesDir/appDownload/FontInstall.asp" target="_blank">東吳大學難字安裝程式 (網頁缺字時請安裝)</a><i class="fa fa-angle-right"></i></li>
+															</ul>
+						</div><!--/col-md-3-->
+						<!-- End Link List -->
+
+						<!-- Address -->
+						<div class="col-md-3 map-img md-margin-bottom-40">
+							<div class="headline"><h2>聯絡我們</h2></div>
+							<address class="md-margin-bottom-40">
+								<p><p>台北市貴陽街一段 56 號，郵遞區號：10048</p>
+								<p>56 SEC. 1, Kuei-Yang Street, Taipei, Taiwan, R.O.C.</p>
+								<p>電話總機 : (02) 2311-1531，分機 : 2630</p>
+								<p>傳真 : (02) 2381-2510</p>
+								<p>如果您有任何問題或建議，歡迎您與我們聯繫，我們會儘速為您服務。</p>
+								<p>&nbsp;</p><p>
+							</address>
+						</div><!--/col-md-3-->
+						<!-- End Address -->
+					</div>
+				</div>
+			</div><!--/footer-->
+
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<p>
+								2017 &copy; 東吳大學【財務工程與精算數學系】 All Rights Reserved.
+								<a href="/private_policy/">隱私權政策</a> | <a href="http://www.xiong.tw/" target="_blank">首耀科技</a>
+							</p>
+						</div>
+
+						<!-- Social Links -->
+						<div class="col-md-6">
+							<ul class="footer-socials list-inline">
+								<li>
+									<a href="https://www.facebook.com/FEAM.SCU/" target="_blank" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook">
+										<i class="fa fa-facebook"></i>
+									</a>
+								</li>
+								<!-- 
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Skype">
+										<i class="fa fa-skype"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google Plus">
+										<i class="fa fa-google-plus"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Linkedin">
+										<i class="fa fa-linkedin"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
+										<i class="fa fa-pinterest"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+										<i class="fa fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
+										<i class="fa fa-dribbble"></i>
+									</a>
+								</li>
+								-->
+								<li>
+									<a href="/admin/home/" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Security">
+										<i class="fa fa-user-secret"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- End Social Links -->
+					</div>
+				</div>
+			</div><!--/copyright-->
+		</div>
+		<!--=== End Footer Version 1 ===-->
+	</div><!--/End Wrapepr-->
+	<!-- JS Global Compulsory -->
+	<script type="text/javascript" src="/assets/plugins/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/plugins/jquery/jquery-migrate.min.js"></script>
+	<script type="text/javascript" src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<!-- JS Implementing Plugins -->
+	<script type="text/javascript" src="/assets/plugins/back-to-top.js"></script>
+	<script type="text/javascript" src="/assets/plugins/smoothScroll.js"></script>
+	<script type="text/javascript" src="/assets/plugins/jquery.parallax.js"></script>
+	<script type="text/javascript" src="/assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
+	<!-- JS Customization -->
+	<script type="text/javascript" src="/assets/js/custom.js"></script>
+	<!-- JS Page Level -->
+	<script type="text/javascript" src="/assets/js/app.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/owl-carousel.js"></script>
+	<script type="text/javascript" src="/assets/js/plugins/style-switcher.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function() {
+			App.init();
+			App.initParallaxBg();
+			OwlCarousel.initOwlCarousel();
+			// StyleSwitcher.initStyleSwitcher();
+		});
+	</script>
+	<!--[if lt IE 9]>
+	<script src="/assets/plugins/respond.js"></script>
+	<script src="/assets/plugins/html5shiv.js"></script>
+	<script src="/assets/plugins/placeholder-IE-fixes.js"></script>
+	<![endif]-->
+	<script> 
+		(function(window, document, $, undefined){
+			$(function(){
+		
+			});
+		})(window, document, window.jQuery);
+	</script>
+    <script type='text/javascript'>
+    $(function(){
+
+        var w = $("#mwt_slider_content").width();
+
+        $('#mwt_slider_content').css('height', ($(window).height() - 20) + 'px' ); //將區塊自動撐滿畫面高度
+
+        $("#mwt_fb_tab").click(function(){
+			history.back(-1);
+        });
+        
+    });
+    
+    </script>	
+ 	<script type="text/javascript">
+
+	$(function(){
+
+		$(".btn_class").click(function(){
+
+			var vclassteacher = $(this).attr("data-class_teacher");
+			var vclassyear = $(this).attr("data-class_year");
+			var vclassmaster = $(this).attr("data-class_master");
+			
+			$("#teachname").val(vclassteacher);
+			$("#syear").val(vclassyear);
+			$("#smester").val(vclassmaster);
+			
+			$.ajax({
+	            type: "post",
+	            contentType:"application/x-www-form-urlencoded; charset=Big5",
+	            data: $("#mytmp").serializeArray(),
+	            url: '/get_teacher_class',
+	            dataType:"html",
+	            headers : {'Access-Control-Allow-Origin':'*'},
+	            success: function(Result){
+		            $("#modal-title").html(vclassteacher + " " + vclassyear + "學年 第" + vclassmaster + "學期 課表資料");
+	            		$("#modal-body").html(Result);
+	            		$("#class-modal").modal({show:true});
+	            },error:function(xResult){
+	            		alert(Result);
+	            }
+	            
+	        });
+			
+		});
+		
+	   	
+	})
+
+</script>
+	
 </body>
 </html>
